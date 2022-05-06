@@ -48,7 +48,7 @@ export default function ({ navigation }) {
         onPress={() => {
           dispatch({
             type: "ADD",
-            payload: { title: title, content: content },
+            payload: { title: title, content: content, completed: false },
           });
           navigation.goBack();
         }}
